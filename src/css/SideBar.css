@@ -1,0 +1,90 @@
+.sidebar {
+	background-color: var(--ne-lsbgc);
+	width: 216px;
+	position: absolute;
+	flex-direction: column;
+	display: flex;
+	height: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+	transform: translateX(-216px);
+	transition-duration: .5s;
+	z-index: 1;
+}
+
+.sidebar > input, div, span {
+	user-select: none;
+}
+
+.sidebar-container {
+	border-radius: 7px;
+	background-color: #fff;
+	display: flex;
+	margin: 10px 10px 30px 10px;
+	flex-direction: column;
+}
+
+.sidebar-item {
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sidebar-item:not(:nth-last-child(1)) {
+	border-bottom: 1px solid var(--ne-side-font-gray);
+}
+
+.side-icon {
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+}
+
+.side-text {
+	font-size: normal;
+}
+
+.side-noticer {
+	color: var(--ne-side-font-gray);
+	font-size: small;
+}
+
+.side-noticer > .msgpop {
+	background-color: var(--ne-lred);
+	color: #fff;
+	border-radius: 10px;
+	padding: 1px 2px;
+}
+
+.side-right-arrow {
+	position: relative;
+	top: 0;
+	right: 0;
+	color: var(--ne-side-font-gray);
+}
+
+.user-area {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 10px 30px 10px;
+	align-items: center;
+}
+
+.user-area img.side-avatar {
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.user-area div:first-child{
+	cursor: pointer;
+}
+
+.user-area > img.qr-icon {
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+}
